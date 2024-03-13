@@ -79,3 +79,45 @@ const landmarks = [
 
 let currentQuestion = 0;
 let score = 0;
+
+/**
+ *  Function to start the quiz
+ */ 
+function startQuiz() {
+    // Code to start the quiz
+}
+
+/**
+ * Function to load a question
+ */
+function loadQuestion() {
+    // Code to load a question
+}
+
+/**
+ * Function to check the answer
+ */
+function checkAnswer(selectedOption) {
+    // Code to check the answer
+}
+
+/**
+ * Function to move to the next question
+ */ 
+function nextQuestion() {
+    // Code to move to the next question
+}
+
+/**
+ * Function to show the quiz results
+ */ 
+function showResults() {
+    // Code to show the quiz results
+}
+
+/** 
+ * Function to restart the quiz
+ */
+function restartQuiz() {
+    // Code to restart the quiz
+}
