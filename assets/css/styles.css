@@ -58,3 +58,29 @@ button:hover {
     height: auto;
     border-radius: 0 0 10px 10px;
 }
+
+/* Home page styles */
+.title {
+    font-size: 1.5rem;
+}
+
+#homePage h2, h3 {
+    margin-top: 10px;
+}
+
+#homePage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+#instructions-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#instructions p{
+    text-align: left;
+    margin: 10px 5px;
+    font-size: 1rem;
+}
