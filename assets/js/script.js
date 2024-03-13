@@ -132,6 +132,16 @@ function checkAnswer(selectedOption) {
 }
 
 /**
+ * Function to display the current question number out of the total number of questions.
+ */
+function displayQuestionNumber() {
+    const totalQuestions = 10;
+    const currentQuestionNumber = currentQuestion + 1;
+    const questionNumberText = `Question ${currentQuestionNumber} of ${totalQuestions}`;
+    document.getElementById('questionNumber').textContent = questionNumberText;
+}
+
+/**
  * Function to proceed to the next question or show the results page if all questions have been answered.
  */
 function nextQuestion() {
