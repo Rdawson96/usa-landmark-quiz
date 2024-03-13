@@ -16,12 +16,12 @@
         <!-- Home Page -->
         <div id="homePage" class="page">
             <!-- Home Page Title -->
-            <h1 class="title">USA Landmark Quiz</h1>
+            <h1 class="title" aria-label="Page Title">USA Landmark Quiz</h1>
             <hr>
             <div id="instructionsContent">
                 <!-- landing page image -->
                 <img src="assets/images/us-map-wireframe.jpg" alt="outline of United States" class="imgContainer">
-                <div id="instructions">
+                <div id="instructions" aria-label="Quiz Instructions">
                     <h2>Welcome to the USA Landmark Quiz!</h2>
                     <hr>
                     <h3>How to play?</h3>
@@ -33,7 +33,7 @@
                     </p>
                 </div>
             </div>
-            <button id="startButton">Start Quiz</button>
+            <button id="startButton" aria-label="Start Quiz">Start Quiz</button>
         </div>
         <!-- Game Page -->
         <div id="gamePage" class="page hidden">
@@ -42,17 +42,17 @@
             <hr>
             <p>Can you name the State where this famous US monument is located?</p>
             <!-- div that populates current questions monument name -->
-            <div id="monumentName"></div>
+            <div id="monumentName" aria-label="Current Monument Name"></div>
             <!-- div that populates current questions monument image -->
-            <div id="quizImg"></div>
+            <div id="quizImg" aria-label="Current Monument Image"></div>
             <!-- buttons that populate current questions answer choices -->
             <div id="options">
-                <button id="optionA"></button>
-                <button id="optionB"></button>
-                <button id="optionC"></button>
-                <button id="optionD"></button>
+                <button id="optionA" aria-label="Option A"></button>
+                <button id="optionB" aria-label="Option B"></button>
+                <button id="optionC" aria-label="Option C"></button>
+                <button id="optionD" aria-label="Option D"></button>
             </div>
-            <div id="questionNumber"></div>
+            <div id="questionNumber" aria-label="Question Number"></div>
         </div>
         <!-- Results Page -->
         <div id="resultsPage" class="page hidden">
@@ -60,13 +60,13 @@
             <h2 class="title">Quiz Results</h2>
             <hr>
             <!-- message depending on score -->
-            <p id="resultMessage"></p>
+            <p id="resultMessage" aria-label="Results Message"></p>
             <!-- User score -->
             <p id="resultText"></p>
-            <button id="playAgainButton">Play Again</button>
-            <button id="homeButton">Go to Home Page</button>
+            <button id="playAgainButton" aria-label="Play Again">Play Again</button>
+            <button id="homeButton" aria-label="Go to Home Page">Go to Home Page</button>
         </div>
     </div>
-    <script src="../assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
