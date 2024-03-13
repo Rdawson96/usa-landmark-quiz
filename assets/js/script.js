@@ -132,10 +132,15 @@ function checkAnswer(selectedOption) {
 }
 
 /**
- * Function to move to the next question
- */ 
+ * Function to proceed to the next question or show the results page if all questions have been answered.
+ */
 function nextQuestion() {
-    // Code to move to the next question
+    currentQuestion++;
+    if (currentQuestion < landmarks.length) {
+        loadQuestion();
+    } else {
+        showResults();
+    }
 }
 
 /**
