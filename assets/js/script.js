@@ -81,11 +81,12 @@ let currentQuestion = 0;
 let score = 0;
 
 /**
- *  Function to start the quiz
- */ 
-function startQuiz() {
-    // Code to start the quiz
-}
+ * Function to start the game by hiding the home page and showing the game page, and loading the first question.
+ */
+function startGame() {
+    document.getElementById('homePage').classList.add('hidden');
+    document.getElementById('gamePage').classList.remove('hidden');
+    loadQuestion();
 
 /**
  * Function to load a question
