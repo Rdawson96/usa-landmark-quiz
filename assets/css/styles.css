@@ -107,3 +107,10 @@ button:hover {
 #questionNumber {
     padding: 10px;
 }
+
+/* Results page styles */
+
+#resultsPage p {
+    margin: 5px;
+    font-size: 1rem;
+}
