@@ -164,9 +164,25 @@ function showResults() {
     document.getElementById('resultText').innerHTML = `You got ${score} out of ${totalQuestions} questions correct.`;
 }
 
-/** 
- * Function to restart the quiz
+/**
+ * Function to restart the quiz by resetting the question index, score, button backgrounds, and showing the game page.
  */
 function restartQuiz() {
-    // Code to restart the quiz
+    currentQuestion = 0;
+    score = 0;
+    
+    // Reset button background colors
+    const optionLetters = ['A', 'B', 'C', 'D'];
+    optionLetters.forEach(letter => {
+        document.getElementById(`option${letter}`).style.backgroundColor = '';
+    });
+
+    // Reset page number display
+    document.getElementById('questionNumber').textContent = '';
+    
+    // Hide results page and show game page
+    document.getElementById('resultsPage').classList.add('hidden');
+    document.getElementById('gamePage').classList.remove('hidden');
+
+    loadQuestion();
 }
