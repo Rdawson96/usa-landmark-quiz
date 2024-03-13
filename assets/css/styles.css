@@ -8,3 +8,53 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #DC143C;
+    color: #001F3F;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 0.9rem;
+}
+
+.page {
+    text-align: center;
+    margin: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+#contentContainer {
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 700px;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #001F3F;
+    color: #F5F5F5;
+    width: 100%;
+    margin: 2px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080  ;
+}
+
+.img-container {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+}
