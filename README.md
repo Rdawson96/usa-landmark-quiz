@@ -57,9 +57,9 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 |Page | Desktop Version | Mobile Version |
 | --- | --- | --- |
-| Home page | ![Desktop home page wireframe image](assets/readme-images/home-page.png) | --- |
-| Game page | ![Desktop game page wireframe image](assets/readme-images/game-page.png) | --- |
-| Results page | ![Desktop results page wireframe image](assets/readme-images/results-page.png) | --- |
+| Home page | ![Desktop home page wireframe image](assets/readme-images/home-page-desktop.png) | ![Mobile home page wireframe image](assets/readme-images/home-page-mobile.png) |
+| Game page | ![Desktop game page wireframe image](assets/readme-images/game-page-desktop.png) | ![Mobile game page wireframe image](assets/readme-images/game-page-mobile.png) |
+| Results page | ![Desktop results page wireframe image](assets/readme-images/results-page-desktop.png) | ![Mobile results page wireframe image](assets/readme-images/results-page-mobile.png) |
 
 
 ## Features
