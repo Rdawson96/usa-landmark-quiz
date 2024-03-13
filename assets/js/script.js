@@ -87,12 +87,24 @@ function startGame() {
     document.getElementById('homePage').classList.add('hidden');
     document.getElementById('gamePage').classList.remove('hidden');
     loadQuestion();
+}
 
 /**
- * Function to load a question
+ * Function to load the current question, display it on the page, and reset button backgrounds.
  */
 function loadQuestion() {
-    // Code to load a question
+    // Call the function to display the question number
+    displayQuestionNumber();
+
+    //Get the current Question from array and populate the selected fields with the corresponding data
+    const question = landmarks[currentQuestion];
+    document.getElementById('quizImg').innerHTML = `<img src="images/${question.image}" alt="Landmark" class="img-container">`;
+    document.getElementById('monumentName').innerHTML = question.name;
+
+    // Update options using a loop to display options on buttons
+    question.options.forEach((option, index) => {
+        document.getElementById(`option${optionLetters[index]}`).innerHTML = option;
+    });
 }
 
 /**
