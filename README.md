@@ -47,7 +47,7 @@ The main goal of the USA Landmarks Quiz is to provide an engaging and educationa
 
 ### Colours Used
 The color scheme of the USA Landmarks Quiz is inspired by the colors of the American flag:
-Image of color scheme
+![Image of colors used in the project](assets/readme-images/color-scheme.png)
 
 ### Fonts used
 The primary font used in the quiz is Nunito, sourced from Google Fonts.
