@@ -7,14 +7,15 @@
     <title>USA Landmark Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div id="contentContainer">
         <!-- Home Page -->
         <div id="homePage" class="page">
+            <!-- Home Page Title -->
             <h1 class="title">USA Landmark Quiz</h1>
             <hr>
             <div id="instructionsContent">
+                <!-- landing page image -->
                 <img src="assets/images/us-map-wireframe.jpg" alt="outline of United States">
                 <div id="instructions">
                     <h2>Welcome to the USA Landmark Quiz!</h2>
@@ -32,11 +33,15 @@
         </div>
         <!-- Game Page -->
         <div id="gamePage" class="page hidden">
+            <!-- Game Page Title -->
             <h1 class="title">USA Landmark Quiz</h1>
             <hr>
             <p>Can you name the State where this famous US monument is located?</p>
+            <!-- div that populates current questions monument name -->
             <div id="monumentName"></div>
+            <!-- div that populates current questions monument image -->
             <div id="quizImg"></div>
+            <!-- buttons that populate current questions answer choices -->
             <div id="options">
                 <button id="optionA"></button>
                 <button id="optionB"></button>
@@ -47,9 +52,12 @@
         </div>
         <!-- Results Page -->
         <div id="resultsPage" class="page hidden">
+            <!-- Results Page Title -->
             <h2 class="title">Quiz Results</h2>
             <hr>
+            <!-- message depending on score -->
             <p id="resultMessage"></p>
+            <!-- User score -->
             <p id="resultText"></p>
             <button id="playAgainButton">Play Again</button>
             <button id="homeButton">Go to Home Page</button>
