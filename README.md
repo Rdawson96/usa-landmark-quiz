@@ -1,39 +1,29 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# USA Landmarks Quiz
 
-Welcome,
+## Table of Contents
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## User Experience
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+### Project Goals
+The main goal of the USA Landmarks Quiz is to provide an engaging and educational experience for users by testing their knowledge of famous landmarks in the United States. The quiz aims to be interactive, visually appealing, and accessible to a wide audience.
 
-## Codeanywhere Reminders
+### User Stories
+- As a user, I want to test my knowledge of USA landmarks.
+- As a user, I want the quiz to be easy to navigate and understand.
+- As a user, I want immediate feedback on my answers.
+- As a user, I want the quiz to be visually appealing with high-quality images.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Colours Used
+The color scheme of the USA Landmarks Quiz is inspired by the colors of the American flag:
+Image of color scheme
 
-`python3 -m http.server`
+### Fonts used
+The primary font used in the quiz is Nunito, sourced from Google Fonts.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Wireframes
+Balsamiq has been used to show the appearance of the site on different devices
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+|Page | Desktop Version | Mobile Version |
+|--- | --- | --- |
 
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Features
