@@ -186,3 +186,27 @@ function restartQuiz() {
 
     loadQuestion();
 }
+
+/**
+ * Function to navigate to the home page, resetting the quiz state
+ * including the question index, score, and button backgrounds, 
+ * and hiding the results page if displayed.
+ */
+function showHomePage() {
+    currentQuestion = 0; // Reset the question index
+    score = 0; // Reset the score
+
+    // Reset button background colors
+    const optionLetters = ['A', 'B', 'C', 'D'];
+    optionLetters.forEach(letter => {
+        document.getElementById(`option${letter}`).style.backgroundColor = '';
+    });
+
+    // Reset question number display
+    document.getElementById('questionNumber').textContent = '';
+
+    // Hide results page and show home page
+    document.getElementById('resultsPage').classList.add('hidden');
+    document.getElementById('gamePage').classList.add('hidden');
+    document.getElementById('homePage').classList.remove('hidden');
+}
