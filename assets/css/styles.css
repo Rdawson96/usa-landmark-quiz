@@ -114,3 +114,55 @@ button:hover {
     margin: 5px;
     font-size: 1rem;
 }
+
+/* Media query: large or landscape phones (576px and up)*/
+@media screen and (min-width: 576px) {
+    #contentContainer {
+        width: 80%; 
+    }
+
+    button {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    /* Home page styles */
+    #instructions-content {
+        display: flex;
+    }
+
+    /* Quiz page styles */
+
+
+}
+
+/* Media query for screens with a minimum width of 768px */
+@media (min-width: 768px) {
+    #contentContainer {
+        width: 70%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    /* Home page styles */
+
+    /* Quiz page styles */
+    #monumentName {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    #quizImg img {
+        max-height: 600px;
+    }
+
+    /* Results page styles */
+
+    #resultsPage p {
+    margin: 20px 5px;
+    font-size: 1.5rem;
+    }
+
+}
