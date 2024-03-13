@@ -104,7 +104,7 @@ function loadQuestion() {
 
     //Get the current Question from array and populate the selected fields with the corresponding data
     const question = landmarks[currentQuestion];
-    document.getElementById('quizImg').innerHTML = `<img src="images/${question.image}" alt="Landmark" class="img-container">`;
+    document.getElementById('quizImg').innerHTML = `<img src="images/${question.image}" alt="Landmark" class="imgContainer">`;
     document.getElementById('monumentName').innerHTML = question.name;
 
     // Update options using a loop to display options on buttons
