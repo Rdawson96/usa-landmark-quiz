@@ -17,61 +17,61 @@ document.addEventListener('DOMContentLoaded', function() {
 const landmarks = [
     { 
         name:'Cloud Gate Sculpture “The Bean"',
-        image: '../assets/monument-images/cloud-gate.jpg', 
+        image: '../assets/images/cloud-gate.jpg', 
         options: ['Iowa', 'Wisconsin', 'Minnesota', 'Illinois'],
         answer: 'Illinois', 
     },
     { 
         name:'Mount Rushmore', 
-        image: '../assets/monument-images/mount-rushmore.jpg', 
+        image: '../assets/images/mount-rushmore.jpg', 
         options: ['Nevada', 'North Dakota', 'Colorado', 'South Dakota'],
         answer:'South Dakota', 
     },
     { 
         name:'The Grand Canyon', 
-        image: '../assets/monument-images/grand-canyon.jpg', 
+        image: '../assets/images/grand-canyon.jpg', 
         options: ['Nevada', 'Arizona', 'Utah', 'Rhode Island'],
         answer:'Arizona', 
     },
     {
         name: 'Statue of Liberty',
-        image: '../assets/monument-images/statue-of-liberty.jpg',
+        image: '../assets/images/statue-of-liberty.jpg',
         options: ['Virginia', 'Rhode Island', 'New York', 'Delaware'],
         answer: 'New York',
     },
     {
         name: 'Hoover Dam',
-        image: '../assets/monument-images/hoover-dam.jpg',
+        image: '../assets/images/hoover-dam.jpg',
         options: ['Nevada', 'Hawaii', 'New Mexico', 'Texas'],
         answer: 'Nevada',
     },
     {
         name: 'Golden Gate Bridge',
-        image: '../assets/monument-images/golden-gate.jpg',
+        image: '../assets/images/golden-gate.jpg',
         options: ['Maine', 'Idaho', 'California', 'Montana'],
         answer: 'California',
     },
     {
         name: 'Lincoln Memorial',
-        image: '../assets/monument-images/lincoln-memorial.jpg',
+        image: '../assets/images/lincoln-memorial.jpg',
         options: ['Washington', 'Washington D.C.', 'Louisiana', 'West Virginia'],
         answer: 'Washington D.C.',
     },
     {
         name: 'Crazy Horse Memorial',
-        image: '../assets/monument-images/crazy-horse.jpg',
+        image: '../assets/images/crazy-horse.jpg',
         options: ['Nebraska', 'North Dakota', 'Iowa', 'South Dakota'],
         answer: 'South Dakota',
     },
     {
         name: 'Monument Valley',
-        image: '../assets/monument-images/monument-valley.jpg',
+        image: '../assets/images/monument-valley.jpg',
         options: ['Nevada', 'North Dakota', 'Colorado', 'Arizona'],
         answer: 'Arizona',
     },
     {
         name: 'The Space Needle',
-        image: '../assets/monument-images/space-needle.jpg',
+        image: '../assets/images/space-needle.jpg',
         options: ['Nevada', 'North Dakota', 'Colorado', 'Washington'],
         answer: 'Washington',
     },
@@ -95,6 +95,12 @@ function startGame() {
 function loadQuestion() {
     // Call the function to display the question number
     displayQuestionNumber();
+
+    // Reset button background color
+    const optionLetters = ['A', 'B', 'C', 'D'];
+    optionLetters.forEach(letter => {
+        document.getElementById(`option${letter}`).style.backgroundColor = '';
+    });
 
     //Get the current Question from array and populate the selected fields with the corresponding data
     const question = landmarks[currentQuestion];
