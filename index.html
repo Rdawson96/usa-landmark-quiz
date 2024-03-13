@@ -12,11 +12,11 @@
     <div id="contentContainer">
         <!-- Home Page -->
         <div id="homePage" class="page">
-            <h1>USA Landmark Quiz</h1>
+            <h1 class="title">USA Landmark Quiz</h1>
             <hr>
-            <div>
+            <div id="instructionsContent">
                 <img src="assets/images/us-map-wireframe.jpg" alt="outline of United States">
-                <div>
+                <div id="instructions">
                     <h2>Welcome to the USA Landmark Quiz!</h2>
                     <hr>
                     <h3>How to play?</h3>
@@ -28,8 +28,8 @@
                     </p>
                 </div>
             </div>
+            <button id="startButton">Start Quiz</button>
         </div>
-        <button>Start Quiz</button>
         <!-- Game Page -->
         <div id="gamePage" class="page hidden">
             <h1 class="title">USA Landmark Quiz</h1>
@@ -47,8 +47,15 @@
         </div>
         <!-- Results Page -->
         <div id="resultsPage" class="page hidden">
-
+            <h2 class="title">Quiz Results</h2>
+            <hr>
+            <p id="resultMessage"></p>
+            <p id="resultText"></p>
+            <button id="playAgainButton">Play Again</button>
+            <button id="homeButton">Go to Home Page</button>
         </div>
+    </div>
+
     </div>
 </body>
 
