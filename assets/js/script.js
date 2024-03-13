@@ -144,10 +144,24 @@ function nextQuestion() {
 }
 
 /**
- * Function to show the quiz results
- */ 
+ * Function to show the results page with the user's score and a message based on their performance.
+ */
 function showResults() {
-    // Code to show the quiz results
+    document.getElementById('gamePage').classList.add('hidden');
+    document.getElementById('resultsPage').classList.remove('hidden');
+    
+    const totalQuestions = landmarks.length;
+
+    let message;
+    if (score >= 8) {
+        message = "Congratulations!! You really know your monuments!";
+    } else if (score >= 6) {
+        message = "Well done! You did good.";
+    } else {
+        message = "Better luck next time!";
+    }
+    document.getElementById('resultMessage').innerHTML = `${message}`;
+    document.getElementById('resultText').innerHTML = `You got ${score} out of ${totalQuestions} questions correct.`;
 }
 
 /** 
