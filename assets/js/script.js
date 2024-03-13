@@ -1,4 +1,17 @@
-
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('startButton').addEventListener('click', startGame);
+    
+    // Add event listeners for each option button using a for loop
+    for (let i = 0; i < 4; i++) {
+        const optionButton = document.getElementById(`option${'ABCD'[i]}`);
+        optionButton.addEventListener('click', function() {
+            checkAnswer('ABCD'[i]);
+        });
+    }
+    // Add event listeners for play again and home buttons
+    document.getElementById('playAgainButton').addEventListener('click', restartQuiz);
+    document.getElementById('homeButton').addEventListener('click', showHomePage);
+});
 
 // Array containing landmark data (name, image, options, and correct answer).
 const landmarks = [
