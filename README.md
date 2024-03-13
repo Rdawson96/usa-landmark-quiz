@@ -56,7 +56,11 @@ The primary font used in the quiz is Nunito, sourced from Google Fonts.
 Balsamiq has been used to show the appearance of the site on different devices
 
 |Page | Desktop Version | Mobile Version |
-|--- | --- | --- |
+| --- | --- | --- |
+| Home page | ![Desktop home page wireframe image](assets/readme-images/home-page.png) | --- |
+| Game page | ![Desktop game page wireframe image](assets/readme-images/game-page.png) | --- |
+| Results page | ![Desktop results page wireframe image](assets/readme-images/results-page.png) | --- |
+
 
 ## Features
 
