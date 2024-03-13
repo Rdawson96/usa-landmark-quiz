@@ -108,10 +108,27 @@ function loadQuestion() {
 }
 
 /**
- * Function to check the answer
+ * Function to check the user's answer, update the score and button colors, and proceed to the next question after a delay.
+ * @param {string} selectedOption - The letter corresponding to the option chosen by the user (A, B, C, or D).
  */
 function checkAnswer(selectedOption) {
-    // Code to check the answer
+    const correctAnswerIndex = landmarks[currentQuestion].options.indexOf(landmarks[currentQuestion].answer);
+    const selectedButton = document.getElementById(`option${selectedOption}`);
+    const selectedOptionIndex = ['A', 'B', 'C', 'D'].indexOf(selectedOption);
+    
+    // Check if the selected option index matches the correct answer index
+    if (selectedOptionIndex === correctAnswerIndex) {
+        // If the answer is correct, set the background color of the selected button to green
+        selectedButton.style.backgroundColor = 'green';
+        // Increment the score
+        score++;
+    } else {
+        // If the answer is incorrect, set the background color of the selected button to red
+        selectedButton.style.backgroundColor = 'red';
+        // Set the background color of the button corresponding to the correct answer to green
+        document.getElementById(`option${'ABCD'[correctAnswerIndex]}`).style.backgroundColor = 'green';
+    }
+    setTimeout(nextQuestion, 1000); // Move to next question after 1 second
 }
 
 /**
