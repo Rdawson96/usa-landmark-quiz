@@ -84,3 +84,26 @@ button:hover {
     margin: 10px 5px;
     font-size: 1rem;
 }
+
+/* Quiz page styles */
+#gamePage p {
+    margin: 10px 0px;
+}
+
+#monumentName {
+    border-radius: 10px 10px 0 0;
+    background-color: #001F3F;
+    color: #F5F5F5;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#gamePage img {
+    max-height: 500px;
+    margin-bottom: 10px;
+}
+
+#questionNumber {
+    padding: 10px;
+}
