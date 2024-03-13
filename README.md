@@ -1,4 +1,5 @@
 # USA Landmarks Quiz
+Please find a link to the deployed site [here](https://rdawson96.github.io/usa-landmark-quiz/)
 
 ## Table of Contents
   - [User Experience](#user-experience)
@@ -64,6 +65,8 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 ## Features
 
+Features of the site
+
 ### General Features
 
 ## Frameworks and Programs Used
@@ -115,7 +118,11 @@ All images on the website include descriptive alternative text (alt text). This 
 
 #### 3. ARIA (Accessible Rich Internet Applications)
 
+ARIA attributes were utilised on links to enhance the accessibility of the site allowing for screen readers to accurately pick up information.
+
 #### 4. Contrast and Readability
+
+[Coolers Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5) was used to ensure  sufficient contrast in colors chosen to make the content readable for users with visual impairments.
 
 #### 5. Alt Text for Images
 
@@ -175,5 +182,7 @@ All images on the website include descriptive alternative text (alt text). This 
    - Grand Canyon Image by pxhere
 
 ### Code
+https://gamedevacademy.org/javascript-docstrings-tutorial/ - docstrings
+https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/
 
 [back to the top](#usa-landmarks-quiz)
