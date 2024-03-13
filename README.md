@@ -1,8 +1,6 @@
 # USA Landmarks Quiz
 
 ## Table of Contents
-    -[USA Landmarks Quiz](#usa-landmarks-quiz)
-    - [Table of Contents](#table-of-contents)
   - [User Experience](#user-experience)
     - [Project Goals](#project-goals)
     - [User Stories](#user-stories)
@@ -66,11 +64,36 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 ## Frameworks and Programs Used
 
+- [Codeanywhere](https://app.codeanywhere.com/)
+  - Codeanywhere was used for writing code, committing, and then pushing to GitHub. [GitHub](https://githubcom/)
+
+- [Balsamiq](https://balsamiq.com/)
+  - Balsamiq was used to create the wireframes during the design phase of the project.
+
+- [Google Fonts](https://fonts.google.com/)
+  - Google Fonts was used to import the font Nunito Italic into the style.css file. Theis font were used throughout the site.
+
+- [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)
+  - Responsive Design Checker was used in the testing process to check responsiveness on various devices and to generate mockup image.
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+  - Chrome DevTools was used during development process for code review and to test responsiveness.
+
+- [Coolers Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
+  - Coolers Contrast Checker was used to make sure the colors I used contrasted well enough for all users
+
 ### Languages Used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Testing
 
 ### Validator Testing
+
+- The [W3C Markup Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [JSHint](https://jshint.com/) services were used to validate all pages of the project in order to ensure there were no syntax errors.
+
 
 #### Validation Errors
 
@@ -78,7 +101,13 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 #### 1. Lighthouse testing
 
+Light house in Chrome Dev tools was used to confirm accessibility of the site and confirm that the colors of the site are easy to read.
+
+- Lighthouse reports
+
 #### 2. Semantic HTML
+
+All images on the website include descriptive alternative text (alt text). This helps users with visual impairments understand the content and context of images even if they cannot see them.
 
 #### 3. ARIA (Accessible Rich Internet Applications)
 
@@ -86,9 +115,29 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 #### 5. Alt Text for Images
 
+All images on the website include descriptive alternative text (alt text). This helps users with visual impairments understand the content and context of images even if they cannot see them.
+
+
 #### 6. Responsive Design
 
 ### Manual testing
+
+- Home page
+
+| Feature | Test case | Outcome |
+| --- | --- | --- |
+
+- Game page
+
+| Feature | Test case | Outcome |
+| --- | --- | --- |
+
+
+- Results page
+
+| Feature | Test case | Outcome |
+| --- | --- | --- |
+
 
 #### Common Elements
 
@@ -111,9 +160,15 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 ## Credits
 
-### Content
-
 ### Media
+
+- [pxhere](https://pxhere.com/)
+
+  - Quiz Images
+   - Mount Rushmore Image by pxhere
+   - Statue of Liberty Image by pxhere
+   - Cloud Gate Image by pxhere
+   - Grand Canyon Image by pxhere
 
 ### Code
 
