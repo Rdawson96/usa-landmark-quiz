@@ -27,13 +27,14 @@
                     <h3>How to play?</h3>
                     <p>
                         Your task is to guess the state where each landmark is located. You'll be presented with 10
-                        questions, each featuring a landmark. Choose the correct state out of four options to earn
-                        points.
+                        questions, each featuring a landmark. Choose the correct state out of four options to earn points.
+                        <br>
+                        <br>
                         Let's test your knowledge of American landmarks. Are you ready to play?
                     </p>
                 </div>
             </div>
-            <button id="startButton" aria-label="Start Quiz">Start Quiz</button>
+            <button id="startButton" class="button homeButton" aria-label="Start Quiz">Start Quiz</button>
         </div>
         <!-- Game Page -->
         <div id="gamePage" class="page hidden">
@@ -47,24 +48,25 @@
             <div id="quizImg" aria-label="Current Monument Image"></div>
             <!-- buttons that populate current questions answer choices -->
             <div id="options">
-                <button id="optionA" aria-label="Option A"></button>
-                <button id="optionB" aria-label="Option B"></button>
-                <button id="optionC" aria-label="Option C"></button>
-                <button id="optionD" aria-label="Option D"></button>
+                <button id="optionA" class="button gameButton aria-label="Option A"></button>
+                <button id="optionB" class="button gameButton aria-label="Option B"></button>
+                <button id="optionC" class="button gameButton aria-label="Option C"></button>
+                <button id="optionD" class="button gameButton" aria-label="Option D"></button>
             </div>
             <div id="questionNumber" aria-label="Question Number"></div>
         </div>
         <!-- Results Page -->
         <div id="resultsPage" class="page hidden">
             <!-- Results Page Title -->
-            <h2 class="title">Quiz Results</h2>
+            <h1 class="title" aria-label="Page Title">USA Landmark Quiz</h1>
             <hr>
+            <h2 class="title">Quiz Results</h2>
             <!-- message depending on score -->
             <p id="resultMessage" aria-label="Results Message"></p>
             <!-- User score -->
             <p id="resultText"></p>
-            <button id="playAgainButton" aria-label="Play Again">Play Again</button>
-            <button id="homeButton" aria-label="Go to Home Page">Go to Home Page</button>
+            <button id="playAgainButton" class="button resultButton" aria-label="Play Again">Play Again</button>
+            <button id="homeButton" class="button resultButton" aria-label="Go to Home Page">Go to Home Page</button>
         </div>
     </div>
     <script src="./assets/js/script.js"></script>

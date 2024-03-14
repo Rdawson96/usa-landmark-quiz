@@ -37,10 +37,9 @@ body {
     padding: 10px;
 }
 
-button {
+.button {
     background-color: #001F3F;
     color: #F5F5F5;
-    width: 100%;
     margin: 2px auto;
     padding: 15px 30px;
     border: none;
@@ -49,7 +48,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #004080  ;
 }
 
@@ -64,7 +63,7 @@ button:hover {
     font-size: 1.5rem;
 }
 
-#homePage h2, h3 {
+#homePage h2, #homepage h3 {
     margin-top: 10px;
 }
 
@@ -73,6 +72,11 @@ button:hover {
     height: auto;
     border-radius: 0 0 10px 10px;
 }
+
+.homeButton {
+    width: 50%;
+}
+
 
 #instructionsContent {
     display: flex;
@@ -86,6 +90,7 @@ button:hover {
 }
 
 /* Quiz page styles */
+
 #gamePage p {
     margin: 10px 0px;
 }
@@ -104,6 +109,22 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.gameButton {
+    background-color: #001F3F;
+    color: #F5F5F5;
+    width: 100%;
+    margin: 2px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.gameButton:hover {
+    background-color: #004080  ;
+}
+
 #questionNumber {
     padding: 10px;
 }
@@ -113,6 +134,10 @@ button:hover {
 #resultsPage p {
     margin: 5px;
     font-size: 1rem;
+}
+
+.resultButton {
+    width: 50%;
 }
 
 /* Media query: large or landscape phones (576px and up)*/
@@ -127,13 +152,13 @@ button:hover {
     }
 
     /* Home page styles */
-    #instructions-content {
+    #instructionsContent {
         display: flex;
     }
 
-    /* Quiz page styles */
-
-
+    #instructions p {
+        margin: 10px 30px 20px;
+    }
 }
 
 /* Media query for screens with a minimum width of 768px */
@@ -156,6 +181,10 @@ button:hover {
     
     #quizImg img {
         max-height: 600px;
+    }
+
+    #gamePage p {
+        font-size: 2rem;
     }
 
     /* Results page styles */
