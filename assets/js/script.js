@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('startButton').addEventListener('click', startGame);
-    
+
     // Add event listeners for each option button using a for loop
     for (let i = 0; i < 4; i++) {
         const optionButton = document.getElementById(`option${'ABCD'[i]}`);
-        optionButton.addEventListener('click', function() {
+        optionButton.addEventListener('click', function () {
             checkAnswer('ABCD'[i]);
         });
     }
@@ -15,23 +15,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Array containing landmark data (name, image, options, and correct answer).
 const landmarks = [
-    { 
-        name:'Cloud Gate Sculpture “The Bean"',
-        image: '../assets/images/cloud-gate.jpg', 
+    {
+        name: 'Cloud Gate Sculpture “The Bean"',
+        image: '../assets/images/cloud-gate.jpg',
         options: ['Iowa', 'Wisconsin', 'Minnesota', 'Illinois'],
-        answer: 'Illinois', 
+        answer: 'Illinois',
     },
-    { 
-        name:'Mount Rushmore', 
-        image: '../assets/images/mount-rushmore.jpg', 
+    {
+        name: 'Mount Rushmore',
+        image: '../assets/images/mount-rushmore.jpg',
         options: ['Nevada', 'North Dakota', 'Colorado', 'South Dakota'],
-        answer:'South Dakota', 
+        answer: 'South Dakota',
     },
-    { 
-        name:'The Grand Canyon', 
-        image: '../assets/images/grand-canyon.jpg', 
+    {
+        name: 'The Grand Canyon',
+        image: '../assets/images/grand-canyon.jpg',
         options: ['Nevada', 'Arizona', 'Utah', 'Rhode Island'],
-        answer:'Arizona', 
+        answer: 'Arizona',
     },
     {
         name: 'Statue of Liberty',
@@ -118,10 +118,13 @@ function loadQuestion() {
  * @param {string} selectedOption - The letter corresponding to the option chosen by the user (A, B, C, or D).
  */
 function checkAnswer(selectedOption) {
+    // Disable event listeners on all option buttons
+    disableOptionButtonListeners();
+
     const correctAnswerIndex = landmarks[currentQuestion].options.indexOf(landmarks[currentQuestion].answer);
     const selectedButton = document.getElementById(`option${selectedOption}`);
     const selectedOptionIndex = ['A', 'B', 'C', 'D'].indexOf(selectedOption);
-    
+
     // Check if the selected option index matches the correct answer index
     if (selectedOptionIndex === correctAnswerIndex) {
         // If the answer is correct, set the background color of the selected button to green
@@ -134,8 +137,33 @@ function checkAnswer(selectedOption) {
         // Set the background color of the button corresponding to the correct answer to green
         document.getElementById(`option${'ABCD'[correctAnswerIndex]}`).style.backgroundColor = 'green';
     }
-    setTimeout(nextQuestion, 1000); // Move to next question after 1 second
 }
+
+setTimeout(() => {
+    // Re-enable event listeners after a delay
+    enableOptionButtonListeners();
+    nextQuestion();
+}, 1000); // Move to next question after 1 second
+
+function disableOptionButtonListeners() {
+    for (let i = 0; i < 4; i++) {
+        const optionButton = document.getElementById(`options{'ABCD'[i]}`);
+        optionButton.removeEventListener('click', optionButtonClickHandler);
+    }
+}
+
+function enableOptionButtonListeners() {
+    for (let i = 0; i < 4; i++) {
+        const optionButton = document.getElementById(`options{'ABCD'[i]}`);
+        optionButton.addEventListener('click', optionButtonClickHandler);
+    }
+}
+
+function optionButtonClickHandler() {
+    const selectedOption = event.target.dispatchEvent.slice(-1);
+    checkAnswer(selectedOption);
+}
+
 
 /**
  * Function to display the current question number out of the total number of questions.
@@ -165,7 +193,7 @@ function nextQuestion() {
 function showResults() {
     document.getElementById('gamePage').classList.add('hidden');
     document.getElementById('resultsPage').classList.remove('hidden');
-    
+
     const totalQuestions = landmarks.length;
 
     let message;
@@ -186,7 +214,7 @@ function showResults() {
 function restartQuiz() {
     currentQuestion = 0;
     score = 0;
-    
+
     // Reset button background colors
     const optionLetters = ['A', 'B', 'C', 'D'];
     optionLetters.forEach(letter => {
@@ -195,7 +223,7 @@ function restartQuiz() {
 
     // Reset page number display
     document.getElementById('questionNumber').textContent = '';
-    
+
     // Hide results page and show game page
     document.getElementById('resultsPage').classList.add('hidden');
     document.getElementById('gamePage').classList.remove('hidden');
