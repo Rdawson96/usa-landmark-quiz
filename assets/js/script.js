@@ -118,9 +118,6 @@ function loadQuestion() {
  * @param {string} selectedOption - The letter corresponding to the option chosen by the user (A, B, C, or D).
  */
 function checkAnswer(selectedOption) {
-    // Disable event listeners on all option buttons
-    disableOptionButtonListeners();
-
     const correctAnswerIndex = landmarks[currentQuestion].options.indexOf(landmarks[currentQuestion].answer);
     const selectedButton = document.getElementById(`option${selectedOption}`);
     const selectedOptionIndex = ['A', 'B', 'C', 'D'].indexOf(selectedOption);
@@ -137,33 +134,31 @@ function checkAnswer(selectedOption) {
         // Set the background color of the button corresponding to the correct answer to green
         document.getElementById(`option${'ABCD'[correctAnswerIndex]}`).style.backgroundColor = 'green';
     }
+
+    // Disable all option buttons
+    disableOptionButtons();
+
+    setTimeout(() => {
+        // Move to next question after a delay
+        nextQuestion();
+        // Re-enable all option buttons after a delay
+        enableOptionButtons();
+    }, 2000); // Move to next question after 2 second
 }
 
-setTimeout(() => {
-    // Re-enable event listeners after a delay
-    enableOptionButtonListeners();
-    nextQuestion();
-}, 1000); // Move to next question after 1 second
-
-function disableOptionButtonListeners() {
+function disableOptionButtons() {
     for (let i = 0; i < 4; i++) {
-        const optionButton = document.getElementById(`options{'ABCD'[i]}`);
-        optionButton.removeEventListener('click', optionButtonClickHandler);
+        const optionButton = document.getElementById(`option${'ABCD'[i]}`);
+        optionButton.disabled = true;
     }
 }
 
-function enableOptionButtonListeners() {
+function enableOptionButtons() {
     for (let i = 0; i < 4; i++) {
-        const optionButton = document.getElementById(`options{'ABCD'[i]}`);
-        optionButton.addEventListener('click', optionButtonClickHandler);
+        const optionButton = document.getElementById(`option${'ABCD'[i]}`);
+        optionButton.disabled = false;
     }
 }
-
-function optionButtonClickHandler() {
-    const selectedOption = event.target.dispatchEvent.slice(-1);
-    checkAnswer(selectedOption);
-}
-
 
 /**
  * Function to display the current question number out of the total number of questions.
