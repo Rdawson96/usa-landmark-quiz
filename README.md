@@ -110,7 +110,7 @@ Features of the site
 
 Light house in Chrome Dev tools was used to confirm accessibility of the site and confirm that the colors of the site are easy to read.
 
-- Lighthouse reports
+![Lighthouse report results](assets/readme-images/lighthouse-report.png)
 
 #### 2. Semantic HTML
 
@@ -130,6 +130,10 @@ All images on the website include descriptive alternative text (alt text). This 
 
 
 #### 6. Responsive Design
+
+The website is responsive, providing a seamless experience across various devices and screen sizes. This benefits users with different abilities and ensures a consistent and accessible user experience.
+
+This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools/) as the project progressed.
 
 ### Manual testing
 

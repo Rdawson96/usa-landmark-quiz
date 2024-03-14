@@ -54,11 +54,11 @@ body {
 
 .disabledButton {
     pointer-events: none;
-    cursor: :default;
+    cursor: default;
 }
 
 .imgContainer {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 0 0 10px 10px;
 }
@@ -72,12 +72,6 @@ body {
     margin-top: 10px;
 }
 
-#homePage img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0 0 10px 10px;
-}
-
 .homeButton {
     width: 50%;
 }
@@ -86,6 +80,7 @@ body {
 #instructionsContent {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #instructions p{
@@ -115,15 +110,7 @@ body {
 }
 
 .gameButton {
-    background-color: #001F3F;
-    color: #F5F5F5;
     width: 100%;
-    margin: 2px auto;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
 .gameButton:hover {
@@ -200,4 +187,12 @@ body {
     font-size: 1.5rem;
     }
 
+}
+
+/* Media query for screens with a minimum width of 1000px */
+@media (min-width: 1000px) {
+
+    .imgContainer{
+        max-width: 100%;
+    }
 }
