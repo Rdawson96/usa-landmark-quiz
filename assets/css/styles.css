@@ -52,6 +52,11 @@ body {
     background-color: #004080  ;
 }
 
+.disabledButton {
+    pointer-events: none;
+    cursor: :default;
+}
+
 .imgContainer {
     max-width: 100%;
     height: auto;
@@ -146,8 +151,7 @@ body {
         width: 80%; 
     }
 
-    button {
-        width: 90%;
+    .button {
         font-size: 1.2rem;
     }
 
@@ -171,8 +175,6 @@ body {
         font-size: 2rem;
     }
 
-    /* Home page styles */
-
     /* Quiz page styles */
     #monumentName {
         font-size: 1.5rem;
@@ -184,7 +186,11 @@ body {
     }
 
     #gamePage p {
-        font-size: 2rem;
+        font-size: 1.1rem;
+    }
+
+    #questionNumber {
+        font-size: 1.1rem;
     }
 
     /* Results page styles */

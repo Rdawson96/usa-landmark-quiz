@@ -150,6 +150,7 @@ function disableOptionButtons() {
     for (let i = 0; i < 4; i++) {
         const optionButton = document.getElementById(`option${'ABCD'[i]}`);
         optionButton.disabled = true;
+        optionButton.classList.add('disabledButton');
     }
 }
 
@@ -157,6 +158,7 @@ function enableOptionButtons() {
     for (let i = 0; i < 4; i++) {
         const optionButton = document.getElementById(`option${'ABCD'[i]}`);
         optionButton.disabled = false;
+        optionButton.classList.remove('disabledButton');
     }
 }
 
