@@ -277,12 +277,12 @@ The website has been tested on the following browsers:
 
 ### Github
 
-- The following steps are to deploy the website to Github Pages from the GitHub repository:
-  1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
-  2.  At the top of the Repository, Go to the Settings button on the menu.
-  3. Scroll down the Settings page until you locate the Pages section.
-  4. Under Source, click the dropdown called None and select Master Branch.
-  5. The page will refresh automatically and generate a link to your website.
+The following steps are to deploy the website to Github Pages from the GitHub repository:
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+2.  At the top of the Repository, Go to the Settings button on the menu.
+3. Scroll down the Settings page until you locate the Pages section.
+4. Under Source, click the dropdown called None and select Master Branch.
+5. The page will refresh automatically and generate a link to your website.
 
 ## Credits
 
