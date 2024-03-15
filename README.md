@@ -28,7 +28,6 @@ Please find a link to the deployed site [here](https://rdawson96.github.io/usa-l
       - [5. Alt Text for Images](#5-alt-text-for-images)
       - [6. Responsive Design](#6-responsive-design)
     - [Manual testing](#manual-testing)
-      - [Common Elements](#common-elements)
       - [Browser Compatibility](#browser-compatibility)
   - [Bugs](#bugs)
   - [Finished Product](#finished-product)
@@ -73,7 +72,39 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 ## Features
 
-Features of the site
+### Home Page:
+![final desktop Home page](assets/readme-images/home-page-desktop-final.png)
+- **Introduction Section:**
+  - Feature: Provides an introduction to the USA Landmarks Quiz, including a welcoming message and brief instructions on how to play.
+  - Value Added: Sets the tone for the quiz and informs users about what to expect.
+
+- **Start Quiz Button:**
+  - Feature: Prominent button labeled "Start Quiz."
+  - Value Added: Offers a clear call-to-action for users to begin the quiz, encouraging immediate engagement and interaction with the site's content.
+
+### Game Page:
+![final desktop Quiz page](assets/readme-images/quiz-page-desktop-final.png)
+- **Quiz Question Display:**
+  - Feature: Displays a question related to a USA landmark, along with multiple-choice options (A, B, C, D).
+  - Value Added: Engages users with interactive quiz content, prompting them to recall knowledge of landmarks and select the correct answer.
+
+- **Landmark Image Display:**
+  - Feature: Accompanying image of the landmark associated with the current question.
+  - Value Added: Provides visual context for the quiz question, aiding users in identifying the landmark and enhancing the overall quiz experience.
+
+- **Option Buttons:**
+  - Feature: Four option buttons (A, B, C, D) corresponding to the multiple-choice answers.
+  - Value Added: Allows users to select their answer choice conveniently, facilitating quiz participation and interaction.
+
+### Results Page:
+![final desktop Results page](assets/readme-images/result-page-desktop-final.png)
+- **Quiz Results Display:**
+  - Feature: Displays the user's quiz results, including their score and a message based on their performance (e.g., "Congratulations" for a high score or "Better luck next time" for a low score).
+  - Value Added: Provides feedback to users on their quiz performance, motivating them to improve their knowledge and potentially replay the quiz.
+
+- **Play Again Button:**
+  - Feature: Button labeled "Play Again."
+  - Value Added: Enables users to restart the quiz immediately, encouraging repeat engagement and allowing them to further test their knowledge of USA landmarks.
 
 ### General Features
 
@@ -97,8 +128,15 @@ Features of the site
 - [Coolers Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
   - Coolers Contrast Checker was used to make sure the colors I used contrasted well enough for all users.
 
+- [W3C Markup Validator](https://validator.w3.org/)
+  -
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+  -
+
 - [JSHint](https://jshint.com/)
   - JSHint was used to vaildate the sites Javascript code.
+
 
 ### Languages Used
 
@@ -113,9 +151,12 @@ Features of the site
 - The [W3C Markup Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [JSHint](https://jshint.com/) services were used to validate all pages of the project in order to ensure there were no syntax errors.
 
 #### Validation Errors
-- CSS
-  - The validator found one error with my CSS where I had a stray semicolon.
-
+**- HTML**
+  - The validator found that I had missing quotation marks in my options buttons that threw up multiple errors. This was located and fixed. The validator now shows no errors
+**- CSS**
+  - The validator found one error with my CSS where I had a stray semicolon. This was located and deleted. The validator now shows no errors
+**- Javascript**
+  - The validator gave one warning. This was fixed by altering the event listeners to not reference outer scope variable by adding new function that serves as a new event listener
 
 
 ### Accessibility
@@ -128,7 +169,7 @@ Light house in Chrome Dev tools was used to confirm accessibility of the site an
 
 #### 2. Semantic HTML
 
-All images on the website include descriptive alternative text (alt text). This helps users with visual impairments understand the content and context of images even if they cannot see them.
+Ensured all HTML elements had appropriate semantic meaning for accessibility.
 
 #### 3. ARIA (Accessible Rich Internet Applications)
 
@@ -141,7 +182,6 @@ ARIA attributes were utilised on links to enhance the accessibility of the site 
 #### 5. Alt Text for Images
 
 All images on the website include descriptive alternative text (alt text). This helps users with visual impairments understand the content and context of images even if they cannot see them.
-
 
 #### 6. Responsive Design
 
@@ -185,8 +225,6 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 | Go to Home page button | Check that the home button takes the user back to the home page | PASS |
 | Buttons hover | check that the buttons change color when the mouse is hovered over them | PASS |
 
-#### Common Elements
-
 #### Browser Compatibility
 
 ## Bugs
@@ -197,8 +235,6 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 | Event listeners not being disabled correctly so that user was able to click quickly through and skip questions | Revised the code to ensure that event listeners are properly disabled when needed, especially during the checkAnswer function. |
 | Next question not loading after a delay | Adjusted the setTimeout function in the checkAnswer function to ensure that the next question loads after the specified delay. |
 | Question number tallying up when the quiz was restarted | Implemented a reset function to reset the question number to its initial value when the quiz is restarted, ensuring that it doesn't continue incrementing from where it left off. |
-| --- | --- |
-
 
 ## Finished Product
 
@@ -244,10 +280,10 @@ All images featured on this site are sourced from royalty-free libraries.
 
 ### Code
 
+- I used [The Web Shala's](https://www.youtube.com/watch?v=J8QbjXdVl9c&ab_channel=TheWebShala) YouTube tutorial for inspiration for using hide classes and keeping all the html in one document.
+- I used [Game Dev Academy](https://gamedevacademy.org/javascript-docstrings-tutorial/) tutorial on docstrings to help master the labelling of my javascript. Especially for the docstring of my CheckAnswer function
+- I used [Free Code Camps](https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/) article to determine what was best to use to update text content in my javascript.
 - For README.md file, reference from my first project was considered.
 - Thanks to my mentor Marcel Mulders for his constructive feedback.
-
-https://gamedevacademy.org/javascript-docstrings-tutorial/ - docstrings
-https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/
 
 [back to the top](#usa-landmarks-quiz)
