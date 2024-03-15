@@ -127,12 +127,14 @@ Balsamiq has been used to show the appearance of the site on different devices
 
 - [Coolers Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
   - Coolers Contrast Checker was used to make sure the colors I used contrasted well enough for all users.
+![Coolers color contrast image](assets/readme-images/coolers-1.png)
+![Coolers color contrast image](assets/readme-images/coolers-2.png)
 
 - [W3C Markup Validator](https://validator.w3.org/)
-  -
+  - W3C Markup Validator was used to validate the sites HTML code.
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-  -
+  - W3C CSS Validator was used to validate the sites CSS code.
 
 - [JSHint](https://jshint.com/)
   - JSHint was used to vaildate the sites Javascript code.
@@ -151,12 +153,19 @@ Balsamiq has been used to show the appearance of the site on different devices
 - The [W3C Markup Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [JSHint](https://jshint.com/) services were used to validate all pages of the project in order to ensure there were no syntax errors.
 
 #### Validation Errors
-**- HTML**
-  - The validator found that I had missing quotation marks in my options buttons that threw up multiple errors. This was located and fixed. The validator now shows no errors
-**- CSS**
-  - The validator found one error with my CSS where I had a stray semicolon. This was located and deleted. The validator now shows no errors
-**- Javascript**
-  - The validator gave one warning. This was fixed by altering the event listeners to not reference outer scope variable by adding new function that serves as a new event listener
+**HTML**
+  - The validator found that I had missing quotation marks in my options buttons that threw up multiple errors. This was located and fixed. The validator now shows no errors.
+  ![HTML validator code clear](assets/readme-images/html-validator.png)
+**CSS**
+  - The validator found one error with my CSS where I had a stray semicolon. 
+  ![CSS validator code error](assets/readme-images/css-validator-error.png)
+  This was located and deleted. The validator now shows no errors.
+  ![CSS validator code clear](assets/readme-images/css-validator.png)
+**Javascript**
+  - The validator gave one warning. 
+  ![Javasript validator code warning](assets/readme-images/javascript-validator-warning.png)
+  - This was fixed by altering the event listeners to not reference outer scope variable by adding new function that serves as a new event.listener
+  ![Javasript validator code clear](assets/readme-images/javascript-validator.png)
 
 
 ### Accessibility
@@ -231,7 +240,7 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 
 - Solved bugs
 | Bug | How it was fixed |
-| --- | --- |
+| -- | -- |
 | Event listeners not being disabled correctly so that user was able to click quickly through and skip questions | Revised the code to ensure that event listeners are properly disabled when needed, especially during the checkAnswer function. |
 | Next question not loading after a delay | Adjusted the setTimeout function in the checkAnswer function to ensure that the next question loads after the specified delay. |
 | Question number tallying up when the quiz was restarted | Implemented a reset function to reset the question number to its initial value when the quiz is restarted, ensuring that it doesn't continue incrementing from where it left off. |
