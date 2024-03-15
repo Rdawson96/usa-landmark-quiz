@@ -1,4 +1,7 @@
 # USA Landmarks Quiz
+
+![image of mockups of website on multiple devices](assets/readme-images/quiz-mockup.png)
+
 Please find a link to the deployed site [here](https://rdawson96.github.io/usa-landmark-quiz/)
 
 ## Table of Contents
@@ -43,7 +46,7 @@ The main goal of the USA Landmarks Quiz is to provide an engaging and educationa
 ### User Stories
 - As a user, I want to test my knowledge of USA landmarks.
 - As a user, I want the quiz to be easy to navigate and understand.
-- As a user, I want immediate feedback on my answers.
+- As a user, I want feedback on my answers.
 - As a user, I want the quiz to be visually appealing with high-quality images.
 
 ### Colours Used
@@ -176,14 +179,25 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 ## Credits
 
 ### Media
+All images featured on this site are sourced from royalty-free libraries.
 
+- Quiz Images
 - [pxhere](https://pxhere.com/)
-
-  - Quiz Images
-   - Mount Rushmore Image by pxhere
-   - Statue of Liberty Image by pxhere
-   - Cloud Gate Image by pxhere
-   - Grand Canyon Image by pxhere
+   - Mount Rushmore image by pxhere
+   - Statue of Liberty image by pxhere
+   - Cloud Gate image by pxhere
+   - Grand Canyon image by pxhere
+   - Crazy Horse image by pxhere
+- [pexels](https://www.pexels.com/)
+  - Monument Valley image by Pixabay
+  - The Space Needle image by Sergei A
+  - Lincoln Memorial image by Pixabay
+  - Golden Gate Bridge image by Pixabay
+- [unspalsh](https://unsplash.com/)
+  - Hoover Dam image by Emily-Jo Sutcliffe
+- Home Page image
+- [Freepik](https://www.freepik.com/)
+  - Image of USA by rocketpixel
 
 ### Code
 https://gamedevacademy.org/javascript-docstrings-tutorial/ - docstrings
