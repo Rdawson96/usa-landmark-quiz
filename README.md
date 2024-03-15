@@ -228,7 +228,6 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 | Options buttons once button clicked| Check that the page removes the event listeners once an option is clicked so that the user isn't able to click multiple options | PASS |
 | Options buttons disable hover and pointer | Check that once a button is clicked, no other buttons can be clicked until the next page is loaded | PASS |
 | Question number | Check that the question number increments by one when the next question loads | PASS |
-| --- | --- | --- |
 
 - Results page
 
@@ -242,6 +241,14 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 | Buttons hover | check that the buttons change color when the mouse is hovered over them | PASS |
 
 #### Browser Compatibility
+
+The website has been tested on the following browsers:
+- Google Chrome
+  - No appearance, responsiveness nor functionality issues.
+- Microsoft edge
+  - No appearance, responsiveness nor functionality issues.
+- Safari
+  - No appearance, responsiveness nor functionality issues.
 
 ## Bugs
 
