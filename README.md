@@ -104,8 +104,11 @@ Features of the site
 
 - The [W3C Markup Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [JSHint](https://jshint.com/) services were used to validate all pages of the project in order to ensure there were no syntax errors.
 
-
 #### Validation Errors
+- CSS
+  - The validator found one error with my CSS where I had a stray semicolon.
+
+
 
 ### Accessibility
 
@@ -163,6 +166,12 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 
 ## Finished Product
 
+| Page | Desktop | Mobile |
+| --- | --- | --- |
+| Home page | ![final desktop Home page](assets/readme-images/home-page-desktop-final.png) | ![final mobile Home page](assets/readme-images/home-page-mobile-final.png) |
+| Quiz page | ![final desktop Quiz page](assets/readme-images/quiz-page-desktop-final.png) | ![final mobile Quiz page](assets/readme-images/quiz-page-mobile-final.png) |
+| Results page | ![final desktop Results page](assets/readme-images/results-page-desktop.png) | ![final mobile Results page](assets/readme-images/result-page-mobile-final.png) |
+
 ## Deployment
 
 ### Github
@@ -175,6 +184,11 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
   -  The page will refresh automatically and generate a link to your website.
 
 ## Bugs
+| Bug | How it was fixed |
+| Event listeners not being disabled correctly | --- |
+| Next question not loading after a delay | --- |
+| Question number tallying up when the quiz was restarted | --- |
+
 
 ## Credits
 
@@ -182,22 +196,22 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 All images featured on this site are sourced from royalty-free libraries.
 
 - Quiz Images
-- [pxhere](https://pxhere.com/)
-   - Mount Rushmore image by pxhere
-   - Statue of Liberty image by pxhere
-   - Cloud Gate image by pxhere
-   - Grand Canyon image by pxhere
-   - Crazy Horse image by pxhere
-- [pexels](https://www.pexels.com/)
-  - Monument Valley image by Pixabay
-  - The Space Needle image by Sergei A
-  - Lincoln Memorial image by Pixabay
-  - Golden Gate Bridge image by Pixabay
-- [unspalsh](https://unsplash.com/)
-  - Hoover Dam image by Emily-Jo Sutcliffe
+  - [pxhere](https://pxhere.com/)
+    - Mount Rushmore image by pxhere
+    - Statue of Liberty image by pxhere
+    - Cloud Gate image by pxhere
+    - Grand Canyon image by pxhere
+    - Crazy Horse image by pxhere
+  - [pexels](https://www.pexels.com/)
+    - Monument Valley image by Pixabay
+    - The Space Needle image by Sergei A
+    - Lincoln Memorial image by Pixabay
+    - Golden Gate Bridge image by Pixabay
+  - [unspalsh](https://unsplash.com/)
+    - Hoover Dam image by Emily-Jo Sutcliffe
 - Home Page image
-- [Freepik](https://www.freepik.com/)
-  - Image of USA by rocketpixel
+  - [Freepik](https://www.freepik.com/)
+    - Image of USA by rocketpixel
 
 ### Code
 https://gamedevacademy.org/javascript-docstrings-tutorial/ - docstrings
