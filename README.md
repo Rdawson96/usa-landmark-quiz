@@ -1,6 +1,6 @@
 # USA Landmarks Quiz
 
-![image of mockups of website on multiple devices](assets/readme-images/quiz-mockup.png)
+![image of mock-ups of website on multiple devices](assets/readme-images/quiz-mockup.png)
 
 The main goal of the USA Landmarks Quiz is to provide an engaging and educational experience for users by testing their knowledge of famous landmarks in the United States. The quiz aims to be interactive, visually appealing, and accessible to a wide audience.
 
@@ -79,7 +79,7 @@ Balsamiq has been used to show the appearance of the site on different devices
   - Value Added: Sets the tone for the quiz and informs users about what to expect.
 
 - **Start Quiz Button:**
-  - Feature: Prominent button labeled "Start Quiz."
+  - Feature: Prominent button labelled "Start Quiz."
   - Value Added: Offers a clear call-to-action for users to begin the quiz, encouraging immediate engagement and interaction with the site's content.
 
 ### Game Page:
@@ -96,6 +96,10 @@ Balsamiq has been used to show the appearance of the site on different devices
   - Feature: Four option buttons (A, B, C, D) corresponding to the multiple-choice answers.
   - Value Added: Allows users to select their answer choice conveniently, facilitating quiz participation and interaction.
 
+- **Question Number Counter:**
+  - Feature: Question number at the bottom of page corresponding to the question that the user is on.
+  - Value Added: Users can easily track their progress and anticipate the number of questions remaining.
+
 ### Results Page:
 ![final desktop Results page](assets/readme-images/result-page-desktop-final.png)
 - **Quiz Results Display:**
@@ -103,10 +107,13 @@ Balsamiq has been used to show the appearance of the site on different devices
   - Value Added: Provides feedback to users on their quiz performance, motivating them to improve their knowledge and potentially replay the quiz.
 
 - **Play Again Button:**
-  - Feature: Button labeled "Play Again."
+  - Feature: Button labelled "Play Again."
   - Value Added: Enables users to restart the quiz immediately, encouraging repeat engagement and allowing them to further test their knowledge of USA landmarks.
 
-### General Features
+- **Go to Home Page Button:**
+  - Feature: Button labelled "Go to Home Page."
+  - Value Added: Enables users to got back to the Home Page, encouraging repeat engagement and allowing them to further test their knowledge of USA landmarks.
+
 
 ## Frameworks and Programs Used
 
@@ -120,7 +127,7 @@ Balsamiq has been used to show the appearance of the site on different devices
   - Google Fonts was used to import the font Nunito Italic into the style.css file. Theis font were used throughout the site.
 
 - [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php)
-  - Responsive Design Checker was used in the testing process to check responsiveness on various devices and to generate mockup image.
+  - Responsive Design Checker was used in the testing process to check responsiveness on various devices and to generate mock-up image.
 
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
   - Chrome DevTools was used during development process for code review and to test responsiveness.
@@ -137,7 +144,7 @@ Balsamiq has been used to show the appearance of the site on different devices
   - W3C CSS Validator was used to validate the sites CSS code.
 
 - [JSHint](https://jshint.com/)
-  - JSHint was used to vaildate the sites Javascript code.
+  - JSHint was used to validate the sites Javascript code.
 
 
 ### Languages Used
@@ -163,9 +170,9 @@ Balsamiq has been used to show the appearance of the site on different devices
   ![CSS validator code clear](assets/readme-images/css-validator.png)
 **Javascript**
   - The validator gave one warning. 
-  ![Javasript validator code warning](assets/readme-images/javascript-validator-warning.png)
+  ![Javascript validator code warning](assets/readme-images/javascript-validator-warning.png)
   - This was fixed by altering the event listeners to not reference outer scope variable by adding new function that serves as a new event.listener
-  ![Javasript validator code clear](assets/readme-images/javascript-validator.png)
+  ![Javascript validator code clear](assets/readme-images/javascript-validator.png)
 
 
 ### Accessibility
@@ -204,7 +211,7 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 
 | Feature | Test case | Outcome |
 | --- | --- | --- |
-| Hide other elements | Check wether the Quiz and results page are hidden when the page loads | PASS |
+| Hide other elements | Check whether the Quiz and results page are hidden when the page loads | PASS |
 | Start quiz button | Check the Quiz page loads and Home and Results page are hidden when the button is clicked | PASS |
 | Start quiz button hover  | Check the button changes color when the user hovers over the button | PASS |
 
@@ -212,22 +219,22 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 
 | Feature | Test case | Outcome |
 | --- | --- | --- |
-| Hide other elements | Check wether the Home and Results pages are hidden | PASS |
+| Hide other elements | Check whether the Home and Results pages are hidden | PASS |
 | Landmark title | Check that the correct Landmark title is loaded onto the page | PASS |
 | Landmark image | Check that the correct landmark image is loaded onto the page | PASS |
 | Options buttons | Check that the correct states are loaded into the four options buttons | PASS |
 | Options buttons correct colour| Check that once a button is clicked, it turns green when the selected answer is correct | PASS |
 | Options buttons incorrect colour| Check that once a button is clicked, it turns red when the selected answer is incorrect and the correct image turns green | PASS |
-| Options buttons once button clicked| Check that the page removes the event listeners once an option is clicked so that the user isnt able to click multiple options | PASS |
-| Options buttons diable hover and pointer | Check that once a button is clicked, no other buttons can be clicked until the next page is loaded | PASS |
-| Question number | Check that the question number incremenets by one when the next question loads | PASS |
+| Options buttons once button clicked| Check that the page removes the event listeners once an option is clicked so that the user isn't able to click multiple options | PASS |
+| Options buttons disable hover and pointer | Check that once a button is clicked, no other buttons can be clicked until the next page is loaded | PASS |
+| Question number | Check that the question number increments by one when the next question loads | PASS |
 | --- | --- | --- |
 
 - Results page
 
 | Feature | Test case | Outcome |
 | --- | --- | --- |
-| Hide other elements | Check wether the Home and Quiz pages are hidden | PASS |
+| Hide other elements | Check whether the Home and Quiz pages are hidden | PASS |
 | Result message | Check that the correct message appears depending on the users score | PASS |
 | Result score | Check that the correct score displays on the page | PASS |
 | Play again button | Check that the play again button takes the user to the first question | PASS |
