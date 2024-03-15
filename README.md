@@ -30,10 +30,10 @@ Please find a link to the deployed site [here](https://rdawson96.github.io/usa-l
     - [Manual testing](#manual-testing)
       - [Common Elements](#common-elements)
       - [Browser Compatibility](#browser-compatibility)
+  - [Bugs](#bugs)
   - [Finished Product](#finished-product)
   - [Deployment](#deployment)
     - [Github](#github)
-  - [Bugs](#bugs)
   - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
@@ -171,7 +171,7 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 | Options buttons incorrect colour| Check that once a button is clicked, it turns red when the selected answer is incorrect and the correct image turns green | PASS |
 | Options buttons once button clicked| Check that the page removes the event listeners once an option is clicked so that the user isnt able to click multiple options | PASS |
 | Options buttons diable hover and pointer | Check that once a button is clicked, no other buttons can be clicked until the next page is loaded | PASS |
-| Question number | Check that the question number incremenets by one when the next question loads | --- |
+| Question number | Check that the question number incremenets by one when the next question loads | PASS |
 | --- | --- | --- |
 
 - Results page
@@ -189,13 +189,24 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 
 #### Browser Compatibility
 
+## Bugs
+
+- Solved bugs
+| Bug | How it was fixed |
+| --- | --- |
+| Event listeners not being disabled correctly so that user was able to click quickly through and skip questions | Revised the code to ensure that event listeners are properly disabled when needed, especially during the checkAnswer function. |
+| Next question not loading after a delay | Adjusted the setTimeout function in the checkAnswer function to ensure that the next question loads after the specified delay. |
+| Question number tallying up when the quiz was restarted | Implemented a reset function to reset the question number to its initial value when the quiz is restarted, ensuring that it doesn't continue incrementing from where it left off. |
+| --- | --- |
+
+
 ## Finished Product
 
 | Page | Desktop | Mobile |
 | --- | --- | --- |
 | Home page | ![final desktop Home page](assets/readme-images/home-page-desktop-final.png) | ![final mobile Home page](assets/readme-images/home-page-mobile-final.png) |
 | Quiz page | ![final desktop Quiz page](assets/readme-images/quiz-page-desktop-final.png) | ![final mobile Quiz page](assets/readme-images/quiz-page-mobile-final.png) |
-| Results page | ![final desktop Results page](assets/readme-images/results-page-desktop-final.png) | ![final mobile Results page](assets/readme-images/result-page-mobile-final.png) |
+| Results page | ![final desktop Results page](assets/readme-images/result-page-desktop-final.png) | ![final mobile Results page](assets/readme-images/result-page-mobile-final.png) |
 
 ## Deployment
 
@@ -207,14 +218,6 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
   3. Scroll down the Settings page until you locate the Pages section.
   4. Under Source, click the dropdown called None and select Master Branch.
   5. The page will refresh automatically and generate a link to your website.
-
-## Bugs
-| Bug | How it was fixed |
-| --- | --- |
-| Event listeners not being disabled correctly | --- |
-| Next question not loading after a delay | --- |
-| Question number tallying up when the quiz was restarted | --- |
-
 
 ## Credits
 
@@ -240,6 +243,10 @@ All images featured on this site are sourced from royalty-free libraries.
     - Image of USA by rocketpixel
 
 ### Code
+
+- For README.md file, reference from my first project was considered.
+- Thanks to my mentor Marcel Mulders for his constructive feedback.
+
 https://gamedevacademy.org/javascript-docstrings-tutorial/ - docstrings
 https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/
 

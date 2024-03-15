@@ -114,7 +114,7 @@ function loadQuestion() {
 }
 
 /**
- * Function to check the user's answer, update the score and button colors, and proceed to the next question after a delay.
+ * Function to check the user's answer, update the score, disable option buttons, and proceed to the next question after a delay.
  * @param {string} selectedOption - The letter corresponding to the option chosen by the user (A, B, C, or D).
  */
 function checkAnswer(selectedOption) {
@@ -146,6 +146,9 @@ function checkAnswer(selectedOption) {
     }, 2000); // Move to next question after 2 second
 }
 
+/**
+ * Function to disable option buttons 
+ */
 function disableOptionButtons() {
     for (let i = 0; i < 4; i++) {
         const optionButton = document.getElementById(`option${'ABCD'[i]}`);
@@ -154,6 +157,9 @@ function disableOptionButtons() {
     }
 }
 
+/**
+ * Function to enable option buttons 
+ */
 function enableOptionButtons() {
     for (let i = 0; i < 4; i++) {
         const optionButton = document.getElementById(`option${'ABCD'[i]}`);
