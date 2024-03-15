@@ -174,6 +174,7 @@ Balsamiq has been used to show the appearance of the site on different devices
   - This was fixed by altering the event listeners to not reference outer scope variable by adding new function that serves as a new event.listener
   ![Javascript validator code clear](assets/readme-images/javascript-validator.png)
 
+[back to the top](#usa-landmarks-quiz)
 
 ### Accessibility
 
@@ -240,6 +241,8 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 | Go to Home page button | Check that the home button takes the user back to the home page | PASS |
 | Buttons hover | check that the buttons change color when the mouse is hovered over them | PASS |
 
+[back to the top](#usa-landmarks-quiz)
+
 #### Browser Compatibility
 
 The website has been tested on the following browsers:
@@ -259,6 +262,8 @@ The website has been tested on the following browsers:
       - Adjusted the setTimeout function in the checkAnswer function to ensure that the next question loads after the specified delay.
     - Question number tallying up when the quiz was restarted 
       - Implemented a reset function to reset the question number to its initial value when the quiz is restarted, ensuring that it doesn't continue incrementing from where it left off.
+
+[back to the top](#usa-landmarks-quiz)
 
 ## Finished Product
 
@@ -307,6 +312,9 @@ All images featured on this site are sourced from royalty-free libraries.
 - I used [The Web Shala's](https://www.youtube.com/watch?v=J8QbjXdVl9c&ab_channel=TheWebShala) YouTube tutorial for inspiration for using hide classes and keeping all the html in one document.
 - I used [Game Dev Academy](https://gamedevacademy.org/javascript-docstrings-tutorial/) tutorial on docstrings to help master the labelling of my javascript. Especially for the docstring of my CheckAnswer function
 - I used [Free Code Camps](https://www.freecodecamp.org/news/innerhtml-vs-innertext-vs-textcontent/) article to determine what was best to use to update text content in my javascript.
+- I used [She Codes](https://www.shecodes.io/athena/7957-how-to-add-javascript-to-a-button-in-html) article to help me in populating my buttons from an array in javascript.
+- [W3Schools](https://www.w3schools.com/) was referenced throughout the project.
+- [Stack overflow](https://stackoverflow.com/) was referenced throughout the project.
 - For README.md file, reference from my first project was considered.
 - Thanks to my mentor Marcel Mulders for his constructive feedback.
 
