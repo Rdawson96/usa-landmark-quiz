@@ -2,6 +2,8 @@
 
 ![image of mockups of website on multiple devices](assets/readme-images/quiz-mockup.png)
 
+The main goal of the USA Landmarks Quiz is to provide an engaging and educational experience for users by testing their knowledge of famous landmarks in the United States. The quiz aims to be interactive, visually appealing, and accessible to a wide audience.
+
 Please find a link to the deployed site [here](https://rdawson96.github.io/usa-landmark-quiz/)
 
 ## Table of Contents
@@ -41,7 +43,10 @@ Please find a link to the deployed site [here](https://rdawson96.github.io/usa-l
 ## User Experience
 
 ### Project Goals
-The main goal of the USA Landmarks Quiz is to provide an engaging and educational experience for users by testing their knowledge of famous landmarks in the United States. The quiz aims to be interactive, visually appealing, and accessible to a wide audience.
+- Provide an engaging and educational experience for users
+- Test users' knowledge of famous landmarks in the United States
+- Create an interactive and visually appealing quiz
+- Ensure accessibility to a wide audience
 
 ### User Stories
 - As a user, I want to test my knowledge of USA landmarks.
