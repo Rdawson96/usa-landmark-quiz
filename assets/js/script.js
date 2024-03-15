@@ -4,10 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add event listeners for each option button using a for loop
     for (let i = 0; i < 4; i++) {
         const optionButton = document.getElementById(`option${'ABCD'[i]}`);
-        optionButton.addEventListener('click', function () {
-            checkAnswer('ABCD'[i]);
-        });
+        optionButton.addEventListener('click', createEventListener(i));
     }
+
+    /**
+     *  Function to create event listener function for each option button
+     */
+    function createEventListener(index) {
+        return function() {
+            checkAnswer('ABCD'[index]);
+        };
+    }
+    
     // Add event listeners for play again and home buttons
     document.getElementById('playAgainButton').addEventListener('click', restartQuiz);
     document.getElementById('homeButton').addEventListener('click', showHomePage);
@@ -158,7 +166,7 @@ function disableOptionButtons() {
 }
 
 /**
- * Function to enable option buttons 
+ * Function to disable option buttons 
  */
 function enableOptionButtons() {
     for (let i = 0; i < 4; i++) {
