@@ -239,11 +239,12 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 ## Bugs
 
 - Solved bugs
-| Bug | How it was fixed |
-| -- | -- |
-| Event listeners not being disabled correctly so that user was able to click quickly through and skip questions | Revised the code to ensure that event listeners are properly disabled when needed, especially during the checkAnswer function. |
-| Next question not loading after a delay | Adjusted the setTimeout function in the checkAnswer function to ensure that the next question loads after the specified delay. |
-| Question number tallying up when the quiz was restarted | Implemented a reset function to reset the question number to its initial value when the quiz is restarted, ensuring that it doesn't continue incrementing from where it left off. |
+    - Event listeners not being disabled correctly so that user was able to click quickly through and skip questions 
+      - Revised the code to ensure that event listeners are properly disabled when needed, especially during the checkAnswer function.
+    - Next question not loading after a delay 
+      - Adjusted the setTimeout function in the checkAnswer function to ensure that the next question loads after the specified delay.
+    - Question number tallying up when the quiz was restarted 
+      - Implemented a reset function to reset the question number to its initial value when the quiz is restarted, ensuring that it doesn't continue incrementing from where it left off.
 
 ## Finished Product
 
