@@ -95,7 +95,10 @@ Features of the site
   - Chrome DevTools was used during development process for code review and to test responsiveness.
 
 - [Coolers Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5)
-  - Coolers Contrast Checker was used to make sure the colors I used contrasted well enough for all users
+  - Coolers Contrast Checker was used to make sure the colors I used contrasted well enough for all users.
+
+- [JSHint](https://jshint.com/)
+  - JSHint was used to vaildate the sites Javascript code.
 
 ### Languages Used
 
@@ -152,18 +155,35 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 
 | Feature | Test case | Outcome |
 | --- | --- | --- |
+| Hide other elements | Check wether the Quiz and results page are hidden when the page loads | PASS |
+| Start quiz button | Check the Quiz page loads and Home and Results page are hidden when the button is clicked | PASS |
+| Start quiz button hover  | Check the button changes color when the user hovers over the button | PASS |
 
 - Game page
 
 | Feature | Test case | Outcome |
 | --- | --- | --- |
-
+| Hide other elements | Check wether the Home and Results pages are hidden | PASS |
+| Landmark title | Check that the correct Landmark title is loaded onto the page | PASS |
+| Landmark image | Check that the correct landmark image is loaded onto the page | PASS |
+| Options buttons | Check that the correct states are loaded into the four options buttons | PASS |
+| Options buttons correct colour| Check that once a button is clicked, it turns green when the selected answer is correct | PASS |
+| Options buttons incorrect colour| Check that once a button is clicked, it turns red when the selected answer is incorrect and the correct image turns green | PASS |
+| Options buttons once button clicked| Check that the page removes the event listeners once an option is clicked so that the user isnt able to click multiple options | PASS |
+| Options buttons diable hover and pointer | Check that once a button is clicked, no other buttons can be clicked until the next page is loaded | PASS |
+| Question number | Check that the question number incremenets by one when the next question loads | --- |
+| --- | --- | --- |
 
 - Results page
 
 | Feature | Test case | Outcome |
 | --- | --- | --- |
-
+| Hide other elements | Check wether the Home and Quiz pages are hidden | PASS |
+| Result message | Check that the correct message appears depending on the users score | PASS |
+| Result score | Check that the correct score displays on the page | PASS |
+| Play again button | Check that the play again button takes the user to the first question | PASS |
+| Go to Home page button | Check that the home button takes the user back to the home page | PASS |
+| Buttons hover | check that the buttons change color when the mouse is hovered over them | PASS |
 
 #### Common Elements
 
@@ -175,21 +195,22 @@ This was tested via [Chrome DevTools](https://developer.chrome.com/docs/devtools
 | --- | --- | --- |
 | Home page | ![final desktop Home page](assets/readme-images/home-page-desktop-final.png) | ![final mobile Home page](assets/readme-images/home-page-mobile-final.png) |
 | Quiz page | ![final desktop Quiz page](assets/readme-images/quiz-page-desktop-final.png) | ![final mobile Quiz page](assets/readme-images/quiz-page-mobile-final.png) |
-| Results page | ![final desktop Results page](assets/readme-images/results-page-desktop.png) | ![final mobile Results page](assets/readme-images/result-page-mobile-final.png) |
+| Results page | ![final desktop Results page](assets/readme-images/results-page-desktop-final.png) | ![final mobile Results page](assets/readme-images/result-page-mobile-final.png) |
 
 ## Deployment
 
 ### Github
 
 - The following steps are to deploy the website to Github Pages from the GitHub repository:
-  -  Log in to GitHub and locate the [GitHub Repository](https://github.com/).
-  -  At the top of the Repository, Go to the Settings button on the menu.
-  -  Scroll down the Settings page until you locate the Pages section.
-  -  Under Source, click the dropdown called None and select Master Branch.
-  -  The page will refresh automatically and generate a link to your website.
+  1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+  2.  At the top of the Repository, Go to the Settings button on the menu.
+  3. Scroll down the Settings page until you locate the Pages section.
+  4. Under Source, click the dropdown called None and select Master Branch.
+  5. The page will refresh automatically and generate a link to your website.
 
 ## Bugs
 | Bug | How it was fixed |
+| --- | --- |
 | Event listeners not being disabled correctly | --- |
 | Next question not loading after a delay | --- |
 | Question number tallying up when the quiz was restarted | --- |
